@@ -16,8 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from MVTRodrigoAlonzo.views import *
+from AppFamilia.views import padre, madre, hermano
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/', templateTest)
+    path('inicio/', templateTest),
+    path('padre/', padre),
+    path('madre/', madre),
+    path('hermano/', hermano),
 ]
